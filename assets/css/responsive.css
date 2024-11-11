@@ -1,0 +1,147 @@
+/* PC */
+@media (min-width: 992px) {
+  /* khi ở chế độ PC thì ẩn biể tượng menu của chế độ tablets và phone đi */
+  .menu-header__icon {
+    display: none;
+  }
+
+  /* ẩn phần menu mobile ở chế độ PC */
+  .menu-content__mobile {
+    display: none;
+  }
+}
+
+/* tablets(máy tính bảng) và phone */
+@media (max-width: 992.98px) {
+  /* thỏa mãn điều kiện khung nhìn <=992.98 thì thanh nav mất đi */
+  .nav {
+    opacity: 0;
+  }
+
+  /* thỏa mãn điều kiện khung nhìn <=992.98 logo ra giữa */
+  .header-top {
+    position: relative;
+  }
+
+  .header__top--img {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+
+  /* ở chế độ tablets và phone thì hiện thanh menu */
+  .menu-header__icon {
+    width: 24px;
+    color: #fff;
+    position: absolute;
+    top: 38px;
+    left: 26px;
+  }
+
+  /* ở điều kiện bình thường thì  class menu-overly ẩn đi */
+  .menu-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* inset: đối số  : dùng để căn theo top,left,button,right trong position. Các đối số truyền vào
+      tác động đến các cạnh giống margin,padding. 1 đối số tượng trưng cho 4 cạnh */
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* khi người dùng clich vào biểu thượng menu thì class menu-overly hiện lên */
+  #checkbox-mobile:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* tạo phần menu. khi người dùng click vào biểu tượng thì thanh menu trong phần mobile và phone hiện ra */
+  .menu-content__mobile {
+    position: fixed;
+    inset: 0 40% 0 0;
+    background-color: #433838;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    padding: 40px;
+  }
+
+  /* khi nào người dùng click vào biểu tượng menu thì khối menu-content__mobile hiện ra */
+  #checkbox-mobile:checked ~ .menu-content__mobile {
+    transform: translateX(0%);
+  }
+
+  /* menu-content__mobile-icon */
+  .menu-content__mobile-icon {
+    width: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* menu-content__mobile--top */
+  .menu-content__mobile--top {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+  }
+
+  /* cho cả khối nav-list__mobile cách khối menu-content__mobile--top 30px */
+  #nav-list__mobile {
+    margin-top: 30px;
+  }
+
+  .nav__item a {
+    display: block;
+    font-size: 2rem;
+  }
+  .nav__item:hover {
+    background-color: rgb(186, 173, 176);
+  }
+
+  /* =========phần header-button========== */
+  .header-bottom {
+    flex-direction: column;
+    gap: 60px 0;
+  }
+
+  .header-bottom__left {
+    order: 2;
+    width: 80%;
+    text-align: center;
+    margin: 22px auto;
+  }
+
+  .header-bottom__right {
+    order: 1;
+  }
+
+  /* =============services=============== */
+  .services-bottom {
+    flex-direction: column;
+  }
+  .header__book-call {
+    justify-content: center;
+  }
+
+  .services-bottom__img {
+    width: 100%;
+  }
+
+  .services-item {
+    width: 90%;
+    text-align: start;
+  }
+
+  .services-bottom-right {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 992.98px) {
+}
+/* phone */
+@media (max-width: 767.98px) {
+}

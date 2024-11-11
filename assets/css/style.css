@@ -78,8 +78,8 @@ a {
 /* ======================header========================= */
 .header {
   background: #10375c;
-  height: 800px;
   padding-top: 30px;
+  min-height: 100vh;
 }
 
 /* header-top */
@@ -94,7 +94,7 @@ a {
 }
 .nav__item a {
   color: #c9d2da;
-  text-align: center;
+  /* text-align: center; */
   font-family: Sora;
   font-size: 1.6rem;
   font-style: normal;
@@ -141,6 +141,7 @@ a {
   display: flex;
   align-items: center;
   margin-top: 76px;
+  padding-bottom: 30px;
 }
 
 /* header-bottom-left */
@@ -286,7 +287,7 @@ a {
 }
 
 .services-item__desc {
-  width: 308px;
+  /* width: 308px; */
   color: #575f66;
   font-size: 1.6rem;
   font-style: normal;
