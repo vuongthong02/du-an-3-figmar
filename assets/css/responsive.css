@@ -137,10 +137,98 @@
     text-align: center;
     margin-top: 20px;
   }
+
+  /* =========== Word ============ */
+  .work-list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  /* ========= About========= */
+  .about-body {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .about-left__img--small {
+    display: none;
+  }
+
+  .about-left {
+    width: 100%;
+  }
+
+  .about-left__img--big {
+    width: 100%;
+  }
+
+  .about-right {
+    width: 90%;
+    text-align: center;
+  }
+
+  .about-right__heading,
+  .about-right__desc {
+    width: 99%;
+  }
+
+  /* ===========team============= */
+  .team-list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  .team-img__bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ========= dentures ============ */
+  .dentures-img {
+    display: none;
+  }
+
+  .dentures-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* ================= Blog ============= */
+  .blog-body {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .blog-left {
+    order: 2;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-heading {
+    width: 90%;
+  }
+
+  .blog-right {
+    order: 1;
+  }
 }
 
 /* tablets */
 @media (min-width: 768px) and (max-width: 992.98px) {
+  /* ẩn 1 cột trong phần footer khi web ở chế độ xem là tablet để giao diện nhìn đẹp hơn */
+  .footer-hidden__tablet {
+    display: none;
+  }
+
+  /* footer ban đầu để display:flex bây chuyển lại thành display:grid và chia 3 cột  */
+  .footer-top {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
 }
 /* phone */
 @media (max-width: 767.98px) {
