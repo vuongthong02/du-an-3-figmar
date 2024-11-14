@@ -36,6 +36,7 @@
     position: absolute;
     top: 38px;
     left: 26px;
+    cursor: pointer;
   }
 
   /* ở điều kiện bình thường thì  class menu-overly ẩn đi */
@@ -229,7 +230,127 @@
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 1fr;
   }
+
+  /* ẩn log in và sing up trong thanh menu khi ở c hế độ ipad */
+  .show-on__mobile {
+    display: none;
+  }
 }
 /* phone */
 @media (max-width: 767.98px) {
+  /* ============header================= */
+  .action {
+    display: none;
+  }
+
+  .menu-content__mobile {
+    inset: 0 30% 0 0;
+  }
+
+  /* bỏ dấu chấm của thẻ li */
+  .nav__item {
+    list-style: none;
+  }
+
+  /* tạo dấu gạch ngang giữa 2 menu và 2 nút sig up, log in */
+  .horizontal-line {
+    width: calc(100% - 10px);
+    border-top: 1px solid #8c8b8b;
+    margin-top: 10px;
+  }
+  /* boe line-hight của ảnh đại diện để nó k bị nhẩy xuống dưới */
+  .nav__item a {
+    line-height: normal;
+  }
+
+  /* tăng khoảng cách của icon menu để bằng với ảnh đại diện */
+  .menu-header__icon {
+    top: 46px;
+  }
+
+  /* =====header - button==== */
+  .header-bottom__img--small {
+    display: none;
+  }
+
+  .header-bottom__img--big {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+  }
+
+  .header-bottom__left {
+    width: 80%;
+    text-align: center;
+  }
+
+  .header-bottom__left--heading {
+    font-size: 3rem;
+  }
+
+  .header__book-call {
+    flex-direction: column;
+  }
+
+  /* ============service=========== */
+  .heading-lv2 {
+    font-size: 3rem;
+  }
+
+  .services-top__desc {
+    width: 90%;
+  }
+
+  .services-bottom__img {
+    height: auto;
+  }
+
+  /* ========work =============== */
+  .word-body__desc {
+    width: 100%;
+  }
+
+  .about-right__heading {
+    text-align: center;
+  }
+
+  /* ========team=========== */
+  .team-list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  /* ==========dentures========== */
+  .dentures-body {
+    padding: 0;
+  }
+
+  /* =========Blog========== */
+  .blog-right {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .blog-heading {
+    text-align: center;
+  }
+
+  /* ========Appointment=========== */
+  .appointment-body {
+    width: 100%;
+    padding: 30px 5px;
+  }
+
+  .appointment__desc {
+    width: 90%;
+  }
+  /* ============footer======= */
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-heading {
+    margin: 30px 0 0 0;
+  }
 }
