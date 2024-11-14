@@ -139,6 +139,9 @@
     margin-top: 20px;
   }
 
+  .services-btn {
+    margin-top: 26px;
+  }
   /* =========== Word ============ */
   .work-list {
     grid-template-columns: 1fr;
@@ -236,6 +239,7 @@
     display: none;
   }
 }
+
 /* phone */
 @media (max-width: 767.98px) {
   /* ============header================= */
@@ -293,6 +297,9 @@
   }
 
   /* ============service=========== */
+  .services {
+    padding: 70px 0;
+  }
   .heading-lv2 {
     font-size: 3rem;
   }
@@ -305,6 +312,14 @@
     height: auto;
   }
 
+  /* =======about============= */
+  .main-about {
+    padding: 20px 0px 30px;
+  }
+
+  .work-item {
+    padding: 20px;
+  }
   /* ========work =============== */
   .word-body__desc {
     width: 100%;
@@ -321,6 +336,10 @@
   }
 
   /* ==========dentures========== */
+  .main-dentures {
+    padding: 40px 0px 85px;
+  }
+
   .dentures-body {
     padding: 0;
   }
@@ -336,6 +355,10 @@
   }
 
   /* ========Appointment=========== */
+  .main-appointment {
+    padding: 30px 0px 85px;
+  }
+
   .appointment-body {
     width: 100%;
     padding: 30px 5px;
@@ -345,6 +368,9 @@
     width: 90%;
   }
   /* ============footer======= */
+  .footer {
+    margin-top: 0px;
+  }
 
   .footer-top {
     flex-direction: column;
