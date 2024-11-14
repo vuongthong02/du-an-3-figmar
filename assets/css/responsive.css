@@ -15,7 +15,7 @@
 @media (max-width: 992.98px) {
   /* thỏa mãn điều kiện khung nhìn <=992.98 thì thanh nav mất đi */
   .nav {
-    opacity: 0;
+    display: none;
   }
 
   /* thỏa mãn điều kiện khung nhìn <=992.98 logo ra giữa */
@@ -262,14 +262,10 @@
     border-top: 1px solid #8c8b8b;
     margin-top: 10px;
   }
-  /* boe line-hight của ảnh đại diện để nó k bị nhẩy xuống dưới */
-  .nav__item a {
-    line-height: normal;
-  }
 
   /* tăng khoảng cách của icon menu để bằng với ảnh đại diện */
   .menu-header__icon {
-    top: 46px;
+    top: 17px;
   }
 
   /* =====header - button==== */
